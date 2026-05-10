@@ -1,0 +1,17 @@
+I am building a Qwiklab-style demo for 10 users in one GCP 
+project. Each user should:
+
+1. ONLY see and edit their OWN firewall rules
+2. NOT see or modify other users' firewall rules
+3. Have firewall rule names prefixed with their username
+
+Use IAM Conditions to restrict each user to resources 
+matching their username prefix.
+
+Project: [YOUR_PROJECT_ID]
+Users: user1@example.com, user2@example.com ... user10@example.com
+
+Generate:
+- gcloud commands for all 10 users
+- Naming convention for firewall rules
+- Verification commands to test isolation
